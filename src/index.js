@@ -9,9 +9,9 @@ class MovieCard extends React.Component {
   render() {
     return (
       <div className="movie-card">
-        <img  
-          src={this.props.poster} 
-          alt={this.props.title} 
+        <img
+          src={this.props.poster}
+          alt={this.props.title}
         />
         <h2>{this.props.title}</h2>
         <small>Genres: {this.props.genres.join(', ')}</small>
@@ -25,7 +25,7 @@ MovieCard.defaultProps = {
 };
 
 ReactDOM.render(
-  <MovieCard 
+  <MovieCard
     title="Mad Max: Fury Road"
     poster="http://image.tmdb.org/t/p/w342/kqjL17yufvn9OVLyXYpvtyrFfak.jpg"
     genres={madMaxGenres}
@@ -37,7 +37,7 @@ ReactDOM.render(
   <MovieCard
     title="Jurassic World"
     poster="http://image.tmdb.org/t/p/w342/jjBgi2r5cRt36xF6iNUEhzscEcb.jpg"
-    genres={jurassicWorldGenres} 
+    genres={jurassicWorldGenres}
   />,
   document.getElementById('root')
 );
@@ -45,7 +45,7 @@ ReactDOM.render(
 ReactDOM.render(
   <MovieCard
     title="Jurassic World"
-    genres={jurassicWorldGenres} 
+    genres={jurassicWorldGenres}
   />,
   document.getElementById('root')
 );
